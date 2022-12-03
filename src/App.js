@@ -1,12 +1,17 @@
 import "./App.css";
-import { Home } from "./pages";
+import Layout  from "./pages/Layout";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom'
 
 function App() {
   return (
-    <>
-      <div>Hi Pwani University</div>
-      <Home />
-    </>
+    <Router>
+      {/* Layout screen */}
+      <Layout/>
+    </Router>
   );
 }
 
